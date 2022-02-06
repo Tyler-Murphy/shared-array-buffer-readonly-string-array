@@ -39,12 +39,6 @@ export default class SharedArrayBufferReadonlyStringArray implements WorkerThrea
 		return new SharedArrayBufferReadonlyStringArray(data)
 	}
 
-	/**
-	 * `WorkerThreaadTransferFormat` can be retrieved by calling `valueOf` on an instance of the class. To re-make the instance in another worker thread, just pass it to this constructor.
-	 *
-	 * References:
-	 *   - https://nodejs.org/api/worker_threads.html#portpostmessagevalue-transferlist
-	 */
 	constructor(data: ReadonlyArray<string> | WorkerThreadTransferFormat) {
 		if (SharedArrayBufferReadonlyStringArray.isWorkerThreadMessageData(data)) {
 			this.indexView = data.indexView
