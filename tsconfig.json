@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"incremental": true,
+		"lib": [
+			"ESNext",
+			"DOM"
+		],
+		"moduleResolution": "Node",
+		"outDir": "dist",
+		"sourceMap": true,
+		"strict": true,
+		"noUncheckedIndexedAccess": true,
+		"target": "ESNext",
+		"module": "ESNext",
+		"esModuleInterop": true
+	},
+	"include": [
+		"src/**/*.ts"
+	],
+	"ts-node": {
+		"files": true
+	  },
+}

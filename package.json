@@ -1,0 +1,32 @@
+{
+  "name": "shared-array-buffer-readonly-string-array",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A way to make and then read from a SharedArrayBuffer containing an array of strings.",
+  "main": "dist/index.js",
+  "files": [
+    "dist/index.js"
+  ],
+  "scripts": {
+    "compile": "tsc",
+    "pretest": "npm run compile",
+    "test": "eslint --cache --fix src/ && parallel-test --path 'dist/test/**/*.js'"
+  },
+  "author": "Tyler Murphy",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/eslint": "^8.4.1",
+    "@types/node": "^17.0.15",
+    "@types/semver": "^7.3.9",
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
+    "eslint": "^8.8.0",
+    "parallel-test": "^3.0.2",
+    "read-pkg": "^7.0.0",
+    "semver": "^7.3.5",
+    "ts-node": "^10.4.0"
+  },
+  "engines": {
+    "node": ">=8.10.0"
+  }
+}
