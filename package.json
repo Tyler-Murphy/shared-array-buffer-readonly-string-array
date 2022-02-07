@@ -1,6 +1,6 @@
 {
   "name": "shared-array-buffer-readonly-string-array",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "A way to make and then read from a SharedArrayBuffer containing an array of strings.",
   "main": "dist/index.js",
