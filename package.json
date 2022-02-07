@@ -5,7 +5,8 @@
   "description": "A way to make and then read from a SharedArrayBuffer containing an array of strings.",
   "main": "dist/index.js",
   "files": [
-    "dist/index.js"
+    "dist/index.js",
+    "dist/index.d.ts"
   ],
   "scripts": {
     "compile": "tsc",

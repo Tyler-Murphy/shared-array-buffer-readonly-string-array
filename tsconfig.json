@@ -8,6 +8,7 @@
 		"moduleResolution": "Node",
 		"outDir": "dist",
 		"sourceMap": true,
+		"declaration": true,
 		"strict": true,
 		"noUncheckedIndexedAccess": true,
 		"target": "ESNext",
